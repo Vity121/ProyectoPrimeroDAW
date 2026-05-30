@@ -1,0 +1,224 @@
+/*
+Verde Pradera	#71A340	
+Tierra Fértil	#8D5C44	
+Cielo de Verano	#68C3EF	
+Baya Dulce	#D43D69	
+Pergamino UI	#F4E4BC	
+Borde de Madera	#542B1A	*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #71A340;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4E4BC;
+    color: #542B1A;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 4px solid #542B1A;
+    margin: 10px;
+}
+
+.header-titular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.nav-header {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+header a {
+    background-color: #8D5C44;
+    border: 2px solid #542B1A;
+    border-radius: 5px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0; /* Ajustado para el nav horizontal */
+}
+
+header a:hover {
+    background-color: #D43D69;
+}
+
+/* ==========================================================================
+   LAYOUT PRINCIPAL
+   ========================================================================== */
+
+main {
+    display: block;
+    padding: 10px;
+    flex: 1;
+}
+
+
+
+/* ==========================================================================
+   CONTENEDORES Y ESTRUCTURAS
+   ========================================================================== */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 40px;
+    padding: 20px;
+}
+
+.personaje-ficha {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #F4E4BC;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+}
+
+.historia-content {
+    background-color: #F4E4BC;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #542B1A;
+    color: #542B1A;
+}
+
+/* ==========================================================================
+   TIPOGRAFÍA Y TITULOS (PERSONALIZADOS)
+   ========================================================================== */
+
+.titulo-seccion {
+    text-align: center;
+}
+
+.titulo-seccion h2 {
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    background-color: #8D5C44;
+    display: flex;
+    width: 20%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px auto; /* Esto centra el bloque en la página */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #542B1A;
+    color: #F4E4BC;
+}
+
+.historia-content h2{
+    font-family: Impact, sans-serif;
+    font-size: 40px; 
+    color: #542B1A;
+    letter-spacing: 3px;  
+    text-shadow: 3px 3px 0px gray; 
+    margin: 0 0 10px 0;
+}
+
+.titulo-seccion h3 {
+    font-size: 30px;
+    background-color: #8D5C44;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-family: Impact, sans-serif;
+    border: 2px solid #542B1A;
+    color: #F4E4BC;
+}
+
+.historia-content-personaje h3 {
+    font-family: Impact, sans-serif;
+    font-size: 40px; 
+    color: #542B1A;
+    letter-spacing: 3px;  
+    text-shadow: 3px 3px 0px gray; 
+    margin: 0 0 10px 0;
+}
+
+.historia-content-personaje p {
+    font-size: 20px;
+    color: #542B1A;
+}
+
+/* ==========================================================================
+   MEDIA Y FOOTER
+   ========================================================================== */
+
+video {
+    width: 500px;
+    height: 281px;
+    border-radius: 5px;
+}
+
+.dimensiones {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #8D5C44;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    border-top: 1px solid #542B1A;
+}
+
+/* ==========================================================================
+   BARRA DE PROGRESO
+   ========================================================================== */
+
+.barra-progreso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #3498db; 
+  transform-origin: left;
+  animation: progress-grow auto linear;
+  animation-timeline: scroll(root); 
+}
+
+@keyframes progress-grow {
+  from {
+    transform: scaleX(0);
+    background-color: #8D5C44;
+  }
+  to {
+    transform: scaleX(1);
+    background-color: #68C3EF;
+  }
+}

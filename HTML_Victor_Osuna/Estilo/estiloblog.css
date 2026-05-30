@@ -1,0 +1,65 @@
+h1{
+    background-color: violet;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(184, 184, 184);
+}
+
+main{
+    display: flex;
+}
+
+a{
+    border: 1px solid black;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+aside{
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.secciones {
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+}
+
+.dimensiones-imagenes{
+    width: 15%;
+    height: 15%;   
+}
+
+.aside-tabla{
+    border: 1px solid black; 
+    padding: 10px;
+    text-align: center;
+}
+
+.formulario-suscripcion {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+      

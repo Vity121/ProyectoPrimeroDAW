@@ -1,0 +1,365 @@
+/*
+PALETA DE COLORES (MAS OSCURO A MAS CLARO)
+=================
+INDIGO -> #4b0081
+INDIGO PURPLE -> #650099
+SHADE OF VIOLET -> #7f00b2
+MAGENTA AFFAIR -> #ab3ed8
+MEDIUMORCHID1 -> #d86aff
+*/
+
+/* 1. SELECTORES UNIVERSALES Y ELEMENTOS RAÍZ */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. ELEMENTOS BODY */
+body {
+    background-color: #d86aff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 5px;
+    gap: 5px;
+    overflow-y: hidden;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+/* 3. ELEMENTOS DE TEXTO */
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+/* 4. ESTRUCTURA PRINCIPAL */
+header {
+    background-color: #4b0081;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 60px;
+    flex-shrink: 0;
+    padding: 0 15px;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 130px);
+    min-height: 0;
+    border-radius: 5px;
+    gap: 5px;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #7f00b2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-style: italic;
+    border-radius: 5px;
+    height: 50px;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* 5. ELEMENTOS DE NAVEGACIÓN */
+nav {
+    margin-right: 0;
+}
+
+/* 6. ELEMENTOS DE ENLACE (ordenados por especificidad) */
+a {
+    background-color: #ab3ed8;
+    border: 2px solid white;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* 7. CONTENIDO PRINCIPAL - ARTICLE */
+article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ab3ed8;
+    padding: 10px;
+    position: relative;
+}
+
+/* Contenedor interno para el scroll */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    position: relative;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+/* 8. SIDEBAR - ASIDE */
+aside {
+    background-color: #471396;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+    flex-shrink: 0;
+    min-height: 0;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+/* Asegurar que las tablas dentro del aside no desborden */
+aside section {
+    flex-shrink: 0;
+    min-height: 0;
+}
+
+.aside-tabla {
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #ab3ed8;
+    border-radius: 5px;
+    margin: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.aside-tabla th, .aside-tabla td {
+    padding: 8px 5px;
+    border: 1px solid black;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 9. SECCIONES DE CONTENIDO */
+/* Grid de las primeras 6 secciones (ocupa la altura completa visible) */
+.visible-sections-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    flex-shrink: 0;
+    height: calc(100vh - 180px); /* Ajustado para dejar espacio */
+    min-height: 0;
+}
+
+/* Contenedor para las secciones adicionales */
+.scroll-sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+/* Cada fila de secciones adicionales (3 columnas) */
+.scroll-sections-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    min-height: calc(50vh - 50px);
+}
+
+/* Ajustes para las secciones */
+.secciones {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #471396;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.secciones h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    line-height: 1.2;
+    flex-shrink: 0;
+    height: auto;
+    min-height: 25px;
+}
+
+.secciones p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.3;
+    overflow: visible;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+/* 10. IMÁGENES */
+.dimensiones-imagenes {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin: 5px 0;
+}
+
+/* 11. SELECTORES CON MAYOR ESPECIFICIDAD (se mantienen después de sus elementos base) */
+.secciones a {
+    margin-top: auto;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+
+.derechos {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+/* 12. FORMULARIOS Y ELEMENTOS ESPECIALES */
+.formulario-suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.albion {
+    background-color: red;
+}
+
+.silksong {
+    background-color: red;
+}
+
+/*ANIMACIÓN REBOTE*/
+@keyframes reboteAnimacion {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-18px); 
+    }
+}
+
+/*CLASE PARA APLICAR LA OPERACIÓN REBOTE*/
+.efecto-rebote {
+    display: inline-block; 
+    animation: reboteAnimacion 1s ease 3;
+}
+
+/*ANIMACIÓN GIRO*/
+/* Definimos el giro */
+@keyframes girarCentro {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Esta clase se activará con JS */
+.derechos-locos {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    
+    /* Aplicamos la animación infinita */
+    animation: girarCentro 2s linear infinite;
+    
+    /* El translate inicial es para compensar el centro exacto */
+    transform: translate(-50%, -50%);
+}
+
+/*CLASES PARA EL GIF*/
+.gif-invocado {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Aparece centrado */
+    z-index: 9999;
+    cursor: grab;
+    user-select: none; /* Para que no se sombreada al arrastrar */
+}
+
+.gif-invocado:active {
+    cursor: grabbing;
+}
+
+/*ANIMACIÓN LABEL FORM*/
+/* Definimos el cambio de colores */
+@keyframes fiestaColores {
+    0%   { color: #ff0000; } /* Rojo */
+    20%  { color: #00ff00; } /* Verde */
+    40%  { color: #0000ff; } /* Azul */
+    60%  { color: #ffff00; } /* Amarillo */
+    80%  { color: #ff00ff; } /* Rosa */
+    100% { color: #00ffff; } /* Cian */
+}
+
+.label-gigante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Aparece centrado */
+    display: inline-block;
+    font-size: 100px; 
+    font-weight: bold;
+    transition: all 0.5s ease 8; 
+    animation: fiestaColores 0.8s infinite linear;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}

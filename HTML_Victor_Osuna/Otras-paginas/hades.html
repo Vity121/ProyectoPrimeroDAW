@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Víctor Osuna">
+    <meta name="description" content="Página sobre el videojuego Hades">
+    <title>Videojuegos Víctor</title>
+    <link rel="icon" href="../media/logotitulo.png" type="image/png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/estilohades.css">
+</head>
+<body>
+    <header>
+        <div class="header-titular">
+            <img src="../media/hades/laurelicon.png" alt="laurel">
+            <h1>Hades</h1>
+            <img src="../media/hades/laurelicon.png" alt="laurel">
+        </div>
+        
+        <nav class="nav-header">
+            <a href="../HTML_Blog_Victor_Osuna.html">Página principal</a>
+            <a href="#Historia">Historia</a>
+            <a href="#Personajes">Personajes</a>
+            <a href="#Opinion">Opinión</a>
+        </nav>
+    </header>
+        
+    <main>
+        <article>
+            <div class="contenedor-carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide carrusel-hades" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="contenedor-imagen-texto"> 
+                                <img src="../media/hades/banner.png" class="d-block w-100 img-carrusel" alt="Imagen 1">
+                                <p class="texto-superpuesto"><a href="#dioses-ctonicos">Dioses Ctónicos</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="contenedor-imagen-texto">
+                                <img src="../media/hades/banner2.png" class="d-block w-100 img-alineada-arriba2" alt="Imagen 2">
+                                <p class="texto-superpuesto"><a href="#dioses-olimpicos">Dioses Olímpicos</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="contenedor-imagen-texto">
+                                <img src="../media/hades/banner3.png" class="d-block w-100 img-alineada-arriba" alt="Imagen 3">
+                                <p class="texto-superpuesto"><a href="#personajes-destacables">Personajes Relevantes</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="contenedor-imagen-texto">
+                                <img src="../media/hades/banner4.png" class="d-block w-100 img-carrusel" alt="Imagen 4">
+                                <p class="texto-superpuesto"><a href="../HTML_Blog_Víctor_Osuna.html">Página principal</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <section class="seccion-trailer">
+                    <video autoplay muted loop>
+                        <source src="../media/hades/trailer-hades.mp4" type="video/mp4" class="dimensiones">
+                    </video>
+                </section>
+                <div class="historia-content" id="Historia">
+                    <h2>HISTORIA</h2>
+                    <section>
+                        <p>Eres Zagreo, hijo de Hades y Perséfone, pero tu padre no deja que veas a tu madre y solo quiere que vivas en el inframundo. Pero a ti nunca se te ha dado bien seguir las normas, asique día tras día decides empezar el ascenso desde el Tártaro a la superficie, pasando por los ardientes Asfódelos y el señorial Elíseo para encontrar a tu madre y poder saciar tu ansia de respuestas. Conseguirlo o no dependerá de tu destreza y de las ayudas clandestinas de los dioses olímpicos y diversos personajes griegos de renombre.</p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="titulo-seccion" id="Opinion"> 
+                <h2>OPINIÓN</h2>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/opinion.png" alt="Opinión" class="dimensiones">
+                <section class="historia-content-personaje">
+                    <h3>Opinión personal sobre el juego</h3>
+                    <p>Hades es uno de mis juegos favoritos, mezcla un estilo de juego de acción Roguelike junto con la mitoligía griega(una de mis grandes pasiones).<br>
+                    El mundo que construye tanto en escenarios como en historia es absolutamente increíble. No hay un solo personaje que pase inadvertido y la manera de interactuar entre los mismo es exquisita. El modo de juego tán frenético hace que no puedas aburrirte ni un solo segundo. Muy recomendado.<br>
+                    Calificación: 10/10</p>
+                </section>
+            </div>
+               
+            <div class="titulo-seccion" id="Personajes"> 
+                <h2>PERSONAJES</h2>
+            </div>
+
+            <div class="titulo-seccion" id="dioses-ctonicos"> 
+                <h3>DIOSES CTÓNICOS</h3>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/zagreo.png" alt="Zagreo" class="dimensiones">
+                <section class="historia-content-personaje" id="Zagreo">
+                    <h3>Zagreo</h3>
+                    <p>Personaje principal, hijo de Hades y Perséfone. Es el príncipe del inframundo y el hermano mayor de Melinoe(de la que hablaremos en Hades 2).<br>
+                    Siempre ha sentido que no pertenece a la Morada de Hades. Después de conocer la verdad sobre su linaje, decide que va a escapar del inframundo sin importar lo que pase, yendo en contra de la voluntad de su padre. Está ayudado y animado por su mentor Aquiles y su madre adoptiva Nicte, quien le puso en contacto con los dioses del Olimpo quienes le garantizan bendiciones para hacerlo mucho más fuerte en sus intentos de escape. A pesar de su ayuda ellos solo le ven como un semi-dios</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Hades_personaje.png" alt="Hades" class="dimensiones">
+                <section class="historia-content-personaje" id="Hades">
+                    <h3>Hades</h3>
+                    <p>Es el dios Ctónico del inframundo y de las riquezas minerales de la tierra, el amo y señor de la Morada de Hades y padre de Zagreo y Melinoe. Es el encargado de mantener el orden del inframundo , determinando el lugar y los castigos de los muertos y escuchando las peticiones de las sombras que vienen a él.<br>
+                    Hades es severo, serio y dedicado en su trabajo. En los recuerdos que se muestran antes de algunos intentos de escape se puede ver como ha sido estricto y a menudo cruel con Zagreo en su infancia. Empleó a Aquiles para enseñar a Zagreo a luchar y darle una más que "firme dirección en la vida". Mientras tanto, Hades parece haber dejado gran parte del cuidado y de la crianza de Zagreo a Nicte</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Nicte.png" alt="Nicte" class="dimensiones">
+                <section class="historia-content-personaje" id="Nicte">
+                    <h3>Nicte</h3>
+                    <p>También referenciada como "Madre Noche", es la personificación de la noche y una residente en la Morada de Hades. Se encarga de dar consejo, ordenes y de revisar el trabajo del día de los dioses ctónicos y del personal, como se ve en sus interacciones con Megara, Dusa y el Contratista de la casa. También es la creadora de las armas nocturnas junto con sus hermanas las erinias.<br>
+                    Nicte es hija de Caos y madre de Caronte, Nemesis, Tánatos, Hypnos y muchos otros. También es madre adoptiva de Zagreo y Melinoe</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Tanatos.png" alt="Tanatos" class="dimensiones">
+                <section class="historia-content-personaje" id="Tanatos">
+                    <h3>Tánatos</h3>
+                    <p>Es la personificación de la muerte, hijo de Nicte y hermano mayor de su hermano gemelo Hipnos.<br>
+                    Como la encarnación de la muerte, Tánatos tiene que hacer muchas incursiones al mundo mortal. Su mas reciente incursión ha tomado más tiempo del habitual - Zagreo y Hipnos han especulado que es por la guerra que se está llevando a cabo - pero aparece de vez en cuando en los intentos de escapada de Zagreo. Aparentemente no le gusta el mundo mortal, en especial lo luminoso que puede llegar a ser</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Hipnos.png" alt="Hipnos" class="dimensiones">
+                <section class="historia-content-personaje" id="Hipnos">
+                    <h3>Hipnos</h3>
+                    <p>Hipnos es la personificación del sueño. Es uno de los muchos hijos de Nicte, y el hermano gemelo menor de Tánatos.<br>
+                    Vigila la procesión de las sombras recién llegadas ante Hades, marcando sus nombres en su lista. A menudo se le ve durmiendo en el trabajo.<br>
+                    Él saluda a Zagreo la mayor parte del tiempo cuando el príncipe es asesinado y regresa a la Casa a través de la Piscina de Estigia, y a menudo da consejos inútiles y una ocurrencia sobre cualquier enemigo o fuerza natural que haya matado a Zagreo</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Caronte.png" alt="Caronte" class="dimensiones">
+                <section class="historia-content-personaje" id="Caronte">
+                    <h3>Caronte</h3>
+                    <p>Caronte es el barquero del Inframundo y la transición encarnada, hijo de Nicte, y responsable de transportar las almas de los difuntos a través del río y al inframundo. En la mitología griega, requería un óbolo único - colocado en la boca antes del entierro - como pago por sus servicios, o el alma en cuestión se quedaría vagando por las orillas de la laguna Estigia durante cien años.<br>
+                    Los servicios de Caronte en el juego son, lamentablemente, mucho más caros; funciona como el tendero del juego, vendiendo a Zagreo varias mejoras, objetos curativos y bendiciones a cambio de los óbolos que recolecta durante su intento de escape</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Megara.png" alt="Megara" class="dimensiones">
+                <section class="historia-content-personaje" id="Megara">
+                    <h3>Megara</h3>
+                    <p>Megara es una de las tres hermanas Furias. Es la hermana mayor de Tisífone y Alecto, y es responsable de castigar a los adúlteros, a los que rompen juramentos y a los ladrones. Hades la envía para impedir que Zagreus escape del Inframundo. Zagreus debe derrotarla antes de avanzar a los Asfódelos durante cualquier intento de escape.<br>
+                    Después de su primera derrota, Megara se unirá a la Morada de Hades como un personaje con el que se puede interactuar, aunque seguirá intentando impedir que Zagreo entre en los Asfódelos</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Caos.png" alt="Caos" class="dimensiones">
+                <section class="historia-content-personaje" id="Caos">
+                    <h3>Caos</h3>
+                    <p>Caos es la encarnación del vacío primordial del cual surgieron Nicte y todos los demás Primordiales. Ofrecen bendiciones a Zagreo que, a diferencia de los impulsos instantáneos ofrecidos por los dioses olímpicos, intercambian una desventaja por una cierta cantidad de encuentros a cambio de un mayor poder más adelante.<br>
+                    El Caos reside dentro de las Puertas del Caos que a veces se encuentran dentro de las salas</p>
+                </section>
+            </div>
+
+            <div class="titulo-seccion" id="dioses-olimpicos"> 
+                <h3>DIOSES OLÍMPICOS</h3>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Zeus.png" alt="Zeus" class="dimensiones">
+                <section class="historia-content-personaje" id="Zeus">
+                    <h3>Zeus</h3>
+                    <p>Zeus es el dios olímpico del cielo y el trueno, y el gobernante (y padre de algunos) de los dioses olímpicos. Es el hermano menor de Hades y el tío de Zagreus. Ofrece bendiciones a su sobrino que le dan habilidades de rayo en cadena o rayos.<br>
+                    Las bendiciones de Zeus sobresalen en infligir daño a grupos de enemigos, ya que los efectos de cadena de rayos rebotan entre los enemigos, y los rayos pueden golpear a múltiples enemigos</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Poseidon.png" alt="Poseidon" class="dimensiones">
+                <section class="historia-content-personaje" id="Poseidon">
+                    <h3>Poseidon</h3>
+                    <p>Poseidón es el dios olímpico del mar, los terremotos y los caballos, y ocasionalmente se le conoce con el epíteto de "Sacudidor de la Tierra". Él, como muchos de sus compañeros olímpicos, ofrece bendiciones a Zagreo que aumentan significativamente el daño de sus habilidades, así como hacen que sus habilidades infligieran Empuje.<br>
+                    Los bendiciones de Poseidón ofrecen el tercer mayor aumento de daño porcentual bruto en Hades, así como la capacidad de empujar a los enemigos, causando daño extra por choque contra la pared o trampas</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Atenea.png" alt="Atenea" class="dimensiones">
+                <section class="historia-content-personaje" id="Atenea">
+                    <h3>Atenea</h3>
+                    <p>Atenea es la diosa olímpica de la sabiduría y la guerra estratégica. Ofrece bendiciones a Zagreo que hacen que sus habilidades desvíen los ataques enemigos. Además, también ofrece bendiciones que reducen el daño o aumentan otras opciones defensivas.<br>
+                    Atenea ofrece excelentes opciones defensivas con sus bendiciones, protegiéndote del daño con la capacidad de desviar los proyectiles y ataques cuerpo a cuerpo enemigos, así como reducir el daño que recibirás en una partida</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Artemisa.png" alt="Artemisa" class="dimensiones">
+                <section class="historia-content-personaje" id="Artemisa">
+                    <h3>Artemisa</h3>
+                    <p>Artemisa es la diosa olímpica de la caza y la hermana gemela mayor de Apolo. Ofrece bendiciones a Zagreo que dan a sus habilidades la posibilidad de infligir daño crítico. Además, también ofrece bendiciones que mejoran las habilidades de Lanzamiento.<br>
+                    Si bien la bonificación de daño que ofrecen sus bendiciones es menor en comparación con la de otros dioses, los golpes críticos que ofrecen infligen tres veces el daño de una habilidad normal, lo que otorga una de las mejores ganancias de DPS en general ofrecidas por cualquier dios o diosa. Los dobendicionesnes de Artemisa, cuando se combinan adecuadamente con otros bendiciones, tienen el potencial de infligir un daño tremendo. Además, sus bendiciones relacionados con Lanzamiento aumentan tu munición total o agregan un proyectil, lo que permite aún más una poderosa herramienta a distancia</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Afrodita.png" alt="Afrodita" class="dimensiones">
+                <section class="historia-content-personaje" id="Afrodita">
+                    <h3>Afrodita</h3>
+                    <p>Afrodita es la diosa olímpica del amor y la belleza. Ofrece bendiciones a Zagreo que infligen Debilidad o hacen que los enemigos sean más susceptibles al daño.<br>
+                    Su maldición de estado característica es Debilidad, que reduce el daño de los enemigos afectados en un 30%. Afrodita también ofrece bendiciones que aumentan la efectividad de su propia maldición de estado, como Vacío Interior (que aumenta la duración del efecto)</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Ares.png" alt="Ares" class="dimensiones">
+                <section class="historia-content-personaje" id="Ares">
+                    <h3>Ares</h3>
+                    <p>Ares es el dios olímpico de la guerra. A diferencia de Atenea, más orientada a la estrategia, el dominio de Ares son los aspectos físicos, violentos e indómitos de la guerra.<br>
+                    Ofrece bendiciones a Zagreo, que pueden aumentar su daño de habilidad, infligir su Maldición de Estado característica, Perdición, o crear Fisuras de Cuchillas que infligen daño rápido a los enemigos que entran en ellas.<br>
+                    Los bendiciones de Ares infligen grandes cantidades de daño con el tiempo, ya sea manteniendo a los enemigos dentro de las Fisuras de Cuchillas o aplicando continuamente Perdición a los enemigos</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Dionisio.png" alt="Dionisio" class="dimensiones">
+                <section class="historia-content-personaje" id="Dionisio">
+                    <h3>Dionisio</h3>
+                    <p>Dioniso es el dios olímpico del vino y la locura, y primo de Zagreo. Ofrece bendiciones a Zagreo relacionados con su Maldición de Estado característica, Resaca, que ralentiza y aturde a los enemigos, así como varios bendiciones temáticos de bebida.<br>
+                    Dioniso ofrece fuertes habilidades de daño en el tiempo en casi todos sus bendiciones ofensivos. Sin embargo, también puede dar a Zagreo fuertes habilidades de utilidad en forma de aturdimientos, ralentizaciones, curaciones y salud, efectos de reducción de daño y objetos</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Hermes.png" alt="Hermes" class="dimensiones">
+                <section class="historia-content-personaje" id="Hermes">
+                    <h3>Hermes</h3>
+                    <p>Hermes es el dios olímpico del comercio, la astucia y los viajes, así como el mensajero de los dioses. Trabaja con Caronte para guiar a las almas a su lugar apropiado en el Inframundo, con Hermes entregando las almas a Caronte, para que las transporte por el Estigio el resto del camino. Ofrece bendiciones que mejoran la velocidad de Zagreo de varias maneras, incluyendo la velocidad de ataque y la velocidad especial. Sus bendiciones también pueden mejorar la recuperación del guion y el lanzamiento de Zagreo</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Demeter.png" alt="Demeter" class="dimensiones">
+                <section class="historia-content-personaje" id="Demeter">
+                    <h3>Deméter</h3>
+                    <p>Deméter es la diosa olímpica de las estaciones y madre de Perséfone. Muchas de las bendiciones que ofrece a Zagreo infligen su maldición de estado característica, Escalofrío, que hace que los enemigos se ralenticen y, posiblemente, se rompan, propagando la maldición. Además de eso, ofrece el segundo mayor aumento de daño porcentual bruto. Sus otras bendiciones varían entre ayudar a la supervivencia mediante la curación, aumentar el daño o potenciar tus diferentes bendiciones con el tiempo aumentando su rareza.<br>
+                    Las bendiciones de Deméter sobresalen en el control, ya que Escalofrío ralentiza a los enemigos cuanto más los golpea Zagreo. Dado que Escalofrío es fácil de acumular y mantener, esto también permite una buena sinergia con la mejora del Espejo de la Noche, estado privilegiado</p>
+                </section>
+            </div>
+
+            <div class="titulo-seccion" id="personajes-destacables"> 
+                <h3>PERSONAJES DESTACABLES</h3>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Aquiles.png" alt="Aquiles" class="dimensiones">
+                <section class="historia-content-personaje" id="Aquiles">
+                    <h3>Aquiles</h3>
+                    <p>Aquiles es un héroe semidiós famoso por su papel en la Guerra de Troya como guerrero sin igual y como líder de su tribu, los Mirmidones. Su madre lo sumergió en el Estigia cuando era niño para otorgarle la inmortalidad, pero quedó vulnerable en el talón por el que Tetis lo sostenía.<br>
+                    Después de ser herido de muerte cuando Paris le disparó en el talón con una flecha, descendió al Inframundo como una Sombra, donde finalmente fue contratado por Hades para entrenar al joven Zagreo en batalla y disciplina militar a cambio de permitir que su amante Patroclo entrara en el Elíseo. Desde que fue contratado, Aquiles se ha esforzado por ser una fuente de apoyo y aliento para Zagreo ante el trato a menudo duro de Hades</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Teseo.png" alt="Teseo" class="dimensiones">
+                <section class="historia-content-personaje" id="Teseo">
+                    <h3>Teseo</h3>
+                    <p>Teseo es un antiguo héroe y rey de Atenas, famoso por matar al Minotauro. Hades lo reclutó para ayudar a evitar la fuga de Zagreo. Lucha junto al Minotauro como jefe final del Elíseo, y sirve al Elíseo como su campeón y su rey</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Asterion.png" alt="Asterion" class="dimensiones">
+                <section class="historia-content-personaje" id="Asterion">
+                    <h3>Asterion</h3>
+                    <p>Asterion, también conocido como el Minotauro, es un semihumano con cabeza de toro que fue reclutado por Hades para ayudar a evitar la fuga de Zagreo. En vida, Asterion fue encerrado en un laberinto por su padrastro, el rey Minos, solo para ser asesinado finalmente por Teseo. En la muerte, los dos son aparentemente camaradas.<br>
+                    Asterion es un posible encuentro de jefe intermedio en Elíseo, además de aparecer siempre como el jefe final de Elíseo, junto con el rey Teseo en el Estadio de Elíseo</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Cerbero.png" alt="Cerbero" class="dimensiones">
+                <section class="historia-content-personaje" id="Cerbero">
+                    <h3>Cerbero</h3>
+                    <p>Cerbero es un perro masivo de tres cabezas encargado de guardar las puertas del Inframundo para evitar que los muertos escapen. Es una bestia magnífica, compañera de Hades y Zagreo.<br>
+                    Cuando Zagreo salió de la Casa por primera vez, Cerbero hizo un berrinche que destrozó la sala de estar de la Casa.<br>
+                    Una vez que Zagreo llega al Templo de Estigia, Cerbero guarda su salida. Zagreo debe encontrar un Saco de Sátiro, el bocadillo favorito de Cerbero, como soborno para abandonar la zona</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Sisifo.png" alt="Sisifo" class="dimensiones">
+                <section class="historia-content-personaje" id="Sisifo">
+                    <h3>Sísifo</h3>
+                    <p>Sísifo es un antiguo rey condenado a una eternidad de castigo en el Tártaro por intentar engañar a la muerte. Tuvo éxito dos veces, cada vez solo temporalmente antes de que las consecuencias lo alcanzaran. Su castigo es empujar una roca cuesta arriba por una empinada colina; sin embargo, la roca siempre rueda colina abajo antes de que llegue a la cima, a pesar de sus mejores esfuerzos. Las Furias, y Megera en particular, lo atormentan mientras intenta empujar la roca, aunque con los recientes intentos de fuga de Zagreo, parecen estar descuidando este deber en particular.</p>
+                </section>
+            </div>
+            <div class="personaje-ficha">
+                <img src="../media/hades/Persefone.png" alt="Persefone" class="dimensiones">
+                <section class="historia-content-personaje" id="Persefone">
+                    <h3>Perséfone</h3>
+                    <p>Perséfone es la diosa de la vegetación (particularmente el grano), e hija de Deméter y el campesino mortal. Se casó con Hades y se la conocía por ser una mujer majestuosa y amable como la reina del inframundo.<br>
+                    Ella es la madre biológica de Zagreo, pero desde entonces se fue a la superficie. Se desconoce por qué se fue, o si tuvo éxito en su escape, pero no murió. Si hubiera muerto, habría regresado a la Casa como él lo hace a través del río Estigia. Tras su partida, Hades prohibió toda mención de ella en la Casa, y como tal, sigue siendo una figura de misterio. Solo se la conoce por una secuencia de flashback desencadenada por Zagreo durmiendo en su habitación, y por conversaciones entre Zagreo y Nicte. Antes de los acontecimientos del juego, nadie en la Casa, excepto Nicte y el propio Hades, sabía que Perséfone era la madre de Zagreo; al comienzo del juego, todos en la Casa (excepto Hipnos) han aprendido que este es el caso. Los dioses olímpicos, sin embargo, aún desconocen este hecho al comienzo de la historia, y no conocen los verdaderos motivos de Zagreo para escapar del Inframundo. Se sabe poco sobre la apariencia de Perséfone, hasta que Zagreo llega a Grecia.</p>
+                </section>
+            </div>
+                
+        </article>
+    </main>
+
+    <footer>
+        <p class="derechos">&copy; TODOS LOS DERECHOS RESERVADOS PARA MI MISMO&trade;</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
